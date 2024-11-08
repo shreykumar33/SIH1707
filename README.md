@@ -9,7 +9,7 @@
 <h1>GeoMav</h1>
 
 <h2>Getting Started</h2>
-<p><b>Note-  </b><em><b>Make sure to pull code and make edits and test in your separate brannch and not main branch </b></em></p>
+<p><b><u>Note-</u></b><em><b>Make sure to pull code and make edits and test in your separate brannch and not main branch </b></em></p>
 <p>Follow the steps below to run the project locally and ensure smooth collaboration.</p>
 
 <ol>
