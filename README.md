@@ -14,7 +14,7 @@
 
 <ol>
     <li>Pull the code:
-        <pre><code>git pull origin <branch-name></code></pre>
+        <pre><code>git pull origin branch-name</code></pre>
     </li>
     <li>Navigate to the project directory:
         <pre><code>cd root_directory</code></pre>
