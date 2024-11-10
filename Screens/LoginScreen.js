@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { View, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { View, ScrollView, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { TextInput, Button, Text, useTheme } from 'react-native-paper';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import tw from 'twrnc';
 
@@ -22,9 +23,27 @@ export default function LoginScreen({ navigation }) {
     <SafeAreaView style={tw`flex-1 bg-gray-100`}>
       <KeyboardAvoidingView 
         behavior={Platform.OS === "ios" ? "padding" : "height"}
-        style={tw`flex-1`}
+        style={tw`flex`}
       >
         <ScrollView contentContainerStyle={tw`flex-grow justify-center p-6`}>
+                      {/* Header with Geomav text and location icon */}
+        <View style={tw`flex-row items-center ml-0 mt-4 mb-8`}>
+        <Icon name="location-on" size={30} color="#1E3A8A" style={tw`mr-2`} />
+        <Text style={tw`text-4xl font-extrabold text-blue-600`}>Geomav</Text>
+      </View>
+      <View style={[tw`items-center mb-4`, {
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 5,
+        elevation: 8, // for Android shadow
+      }]}>
+        <Image 
+          source={{ uri: 'https://www.snapagency.com/wp-content/uploads/2020/04/geofencing.png' }} 
+          style={tw`w-90 h-35 rounded-2xl`} 
+          resizeMode="cover"
+        />
+      </View>
           <View style={tw`bg-white p-8 rounded-2xl shadow-md`}>
             <Text style={tw`text-3xl font-bold mb-6 text-center text-blue-600`}>
               {isLogin ? 'Login' : 'Create Account'}
