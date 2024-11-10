@@ -8,10 +8,12 @@
 
 <h1>GeoMav</h1>
 
-<h3>Iphone Screen Preview</h3>
-<img src="https://github.com/shreykumar33/SIH1707/blob/main/iphone_preview.png" alt="ihone">
-<h3>Android Screen Preview</h3>
-<img src="https://github.com/shreykumar33/SIH1707/blob/main/android_preview.png" alt="android">
+<center><h3>Iphone Screen Preview</h3>
+<img src="https://github.com/shreykumar33/SIH1707/blob/main/iphone_preview.png" alt="ihone"></center>
+
+<center><h3>Android Screen Preview</h3>
+<img src="https://github.com/shreykumar33/SIH1707/blob/main/android_preview.png" alt="android"></center>
+
 <h3>Getting Started</h3>
 <p><b>NOTE- </b><em><b>Make sure to pull code and make edits and test in your separate branch and not main branch </b></em></p>
 <p>Follow the steps below to run the project locally and ensure smooth collaboration.</p>
