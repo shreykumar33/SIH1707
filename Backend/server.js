@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan('combined'));
 
 const corsOptions = {
-  origin: 'http://localhost:5173', // Your React frontend address
+  origin: 'http://localhost:5173',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type']
 };
